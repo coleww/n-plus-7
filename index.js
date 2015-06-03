@@ -1,10 +1,14 @@
 module.exports = function(text, dict, n){
+  var map = {}
+  dict.forEach(function(word, i){
+    map[word] = i
+  })
   return text.split(" ").map(function(word){
     var capitalized = word.charAt(0).toUpperCase() + word.slice(1) === word
     var allCaps = word.toUpperCase() === word
-    var matchIdx = dict.indexOf(word.toLowerCase())
+    var matchIdx = map[word.toLowerCase()]
     var newWord = ''
-    if(matchIdx !== -1){
+    if(matchIdx !== undefined){
       var j = matchIdx + (n || 7)
       if(j >= dict.length){
         j -= dict.length
