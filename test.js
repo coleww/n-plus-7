@@ -36,3 +36,14 @@ tap.test('it wraps around dictionary negatively', function(t){
   t.plan(1)
   t.equal(nPlus7('food is delicious', dict, -2), 'turtles is delicious')
 })
+
+tap.test('it downcases words before checking and preserves capitalization', function(t){
+  t.plan(1)
+  t.equal(nPlus7('Food is delicious', dict, 1), 'Giraffes is delicious')
+})
+
+tap.test('it downcases words before checking and preserves allcaps', function(t){
+  t.plan(1)
+  t.equal(nPlus7('FOOD is delicious', dict, 1), 'GIRAFFES is delicious')
+})
+
