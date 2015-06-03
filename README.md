@@ -16,7 +16,7 @@ a tiny [oulipian](http://en.wikipedia.org/wiki/Oulipo) node module
 `function nPlus7(text, dict, n=7)`
 
 - text: string to transform
-- dict: an array of words to substitute
+- dict: an array of lowercase words to substitute against
 - n: optional negative or positive number, defaults to 7
 
 
