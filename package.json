@@ -20,5 +20,21 @@
     "poetry"
   ],
   "author": "Cole Willsea <coleww@gmail.com> (http://colewillsea.com/)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "browserify": "^10.2.3",
+    "corpora-project": "^0.1.2",
+    "benchmark": "^1.0.0",
+    "shakespeare-insult": "^1.0.0",
+    "tape": "^4.0.0",
+    "watchify": "^3.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coleww/n-plus-7"
+  },
+  "bugs": {
+    "url": "https://github.com/coleww/n-plus-7/issues"
+  },
+  "homepage": "https://github.com/coleww/n-plus-7"
 }
