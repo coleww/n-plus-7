@@ -1,4 +1,4 @@
-var nPlus7 = require('./')
+var nPlus7 = require('../')
 var nouns = require('./nouns')
 
 function doIt(){
