@@ -16,17 +16,30 @@ a tiny [oulipian](http://en.wikipedia.org/wiki/Oulipo) node module
 `function nPlus7(text, dict, n=7)`
 
 - text: string to transform
-- dict: an array of lowercase words to substitute against
+- dict: an array of sorted lowercase words to substitute against
 - n: optional negative or positive number, defaults to 7
+
+will preserve Capitalization, ALL-CAPSITIZATION, and trailing punctuation...
 
 
 ### EXAMPLE
 
 ```
     var nPlus7 = require('n-plus-7')
-    <!-- corpora for nouns? -->
 
-    ...
+    // get word lists from the corpora project!
+    var corpora = require('corpora-project')
+    var dictionary = corpora.getFile('words', 'nouns')
 
+    // get some noun words from wordo!
+    var wordo = require('wordo')
+    var dictionary = wordo.nouns.other
+
+    // provide yr own words! Will take any array of strings!
+    var dictionary = ['ackbar', 'banana', 'calamity', 'determined', 'ennui']
+
+    var transformed = nPlus7('What a day to be living as a noble hippotamus!', dictionary)
+    console.log(transformed)
+    => 'What a elephant to be living as a noble jocularity!' // output depends on yr dictionary
 ```
 
