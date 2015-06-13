@@ -47,3 +47,9 @@ tap.test('it downcases words before checking and preserves allcaps', function(t)
   t.equal(nPlus7('FOOD is delicious', dict, 1), 'GIRAFFES is delicious')
 })
 
+tap.test('it preserves punctuation', function(t){
+  t.plan(2)
+  t.equal(nPlus7('i want food.', dict, 1), 'i want giraffes.')
+  t.equal(nPlus7('i want food\n', dict, 1), 'i want giraffes\n')
+})
+
