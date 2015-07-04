@@ -1,6 +1,8 @@
 n-plus-7
 ----------------
 
+[![NPM](https://nodei.co/npm/n-plus-7.png)](https://nodei.co/npm/n-plus-7/)
+
 a tiny [oulipian](http://en.wikipedia.org/wiki/Oulipo) node module
 
 "Replace every noun in a text with the seventh noun after it in a dictionary. ... Results will vary depending upon the dictionary used. This technique can also be performed on other lexical classes, such as verbs."
