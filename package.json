@@ -1,6 +1,9 @@
 {
   "name": "n-plus-7",
   "description": "an oulipian text transformer",
+  "bin": {
+    "nPlus7": "cmd.js"
+  },
   "version": "1.0.1",
   "main": "index.js",
   "scripts": {
@@ -28,5 +31,8 @@
   "bugs": {
     "url": "https://github.com/coleww/n-plus-7/issues"
   },
-  "homepage": "https://github.com/coleww/n-plus-7"
+  "homepage": "https://github.com/coleww/n-plus-7",
+  "dependencies": {
+    "yargs": "^3.14.0"
+  }
 }

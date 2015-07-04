@@ -47,3 +47,27 @@ will preserve Capitalization, ALL-CAPSITIZATION, and trailing punctuation...
     => 'What a elephant to be living as a noble jocularity!' // output depends on yr dictionary, obvz
 ```
 
+### CLI
+
+install globally
+`npm install n-plus-7 -g`
+
+---------------
+
+`nPlus7 -help`
+
+```
+an oulipian text transformer
+
+Options:
+  -d, --dict  path to a txt file containing a newline separated dictionary
+  -n, --enn   offset with which to perform the n-plus maneuver
+  -f, --file  path to file containing text to transform
+  -h, --help  Show help                                                [boolean]
+
+Examples:
+  nPlus7 -d nouns.txt -f kanye_lyrics.txt
+  nPlus7 -f jokes.txt -n 5
+  nPlus7 water fowl are my favorite treat
+  echo demonstration | nPlus7
+```
