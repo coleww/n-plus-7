@@ -1,5 +1,8 @@
+var nouns = require('./nouns')
+
 module.exports = function(text, dict, n){
   var map = {}
+  if(!dict) dict = nouns
   dict.forEach(function(word, i){
     map[word] = i
   })

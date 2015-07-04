@@ -53,3 +53,8 @@ tap.test('it preserves punctuation', function(t){
   t.equal(nPlus7('i want food\n', dict, 1), 'i want giraffes\n')
 })
 
+tap.test('it has a built in dict as backup', function(t){
+  t.plan(2)
+  t.equal(nPlus7('i want water'), 'i want whisky')
+  t.equal(nPlus7('i want water', null, 1), 'i want warmth')
+})
