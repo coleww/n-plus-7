@@ -4,7 +4,7 @@
   "bin": {
     "nPlus7": "cmd.js"
   },
-  "version": "1.0.1",
+  "version": "1.1.0",
   "main": "index.js",
   "scripts": {
     "build": "browserify www/demo.js -o www/bundle.js",
