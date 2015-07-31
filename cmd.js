@@ -3,7 +3,7 @@
 var nPlus7 = require('./')
 var fs = require('fs')
 
-if(process.stdin.isTTY) {
+if (process.stdin.isTTY) {
   var argv = require('yargs')
     .alias('h', 'help')
     .help('help')
@@ -20,22 +20,22 @@ if(process.stdin.isTTY) {
     .describe('f', 'path to file containing text to transform')
     .argv
   var dict
-  if(argv.d) dict = fs.readFileSync(argv.d).toString().split("\n")
-  var text = argv.f ? fs.readFileSync(argv.f).toString() : argv._.join(" ")
+  if (argv.d) dict = fs.readFileSync(argv.d).toString().split('\n')
+  var text = argv.f ? fs.readFileSync(argv.f).toString() : argv._.join(' ')
 
   process.stdout.write(nPlus7(text, dict, +argv.n))
-  process.stdout.write("\n")
+  process.stdout.write('\n')
 } else {
 
   var data = ''
   process.stdin.resume()
   process.stdin.setEncoding('utf8')
-  process.stdin.on('data', function(chunk) {
+  process.stdin.on('data', function (chunk) {
     data += chunk
   })
 
-  process.stdin.on('end', function() {
+  process.stdin.on('end', function () {
     process.stdout.write(nPlus7(data))
-    process.stdout.write("\n")
+    process.stdout.write('\n')
   })
 }

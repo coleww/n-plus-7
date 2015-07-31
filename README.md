@@ -2,6 +2,8 @@ n-plus-7
 ----------------
 
 [![NPM](https://nodei.co/npm/n-plus-7.png)](https://nodei.co/npm/n-plus-7/)
+[![Build Status](https://secure.travis-ci.org/coleww/n-plus-7.png)](http://travis-ci.org/coleww/n-plus-7)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
 a tiny [oulipian](http://en.wikipedia.org/wiki/Oulipo) node module
 
